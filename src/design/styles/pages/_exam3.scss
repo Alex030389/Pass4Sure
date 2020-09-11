@@ -1,0 +1,52 @@
+.box-examdata-examguarant {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+
+  @media (max-width: $md) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.exam3 {
+
+  &__data {
+    line-height: 1.4;
+    margin-right: 20px;
+    width: 320px;
+    flex-shrink: 0;
+
+    @media (max-width: $md) {
+      margin-right: 0;
+      width: 100%;
+      margin-bottom: 12px;
+    }
+
+    p {
+      margin-bottom: 0;
+
+      a {
+        color:#0c5fa6;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+
+  &__exam-guarant {
+    flex-shrink: 0;
+  }
+
+  &__title-box {
+    width: calc(100% - 320px - 20px);
+
+    @media (max-width: $lg) {
+      width: 100%;
+    }
+  }
+}

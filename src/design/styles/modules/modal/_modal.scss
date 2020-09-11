@@ -1,0 +1,172 @@
+// magnific-popup plagin
+.mfp-bg {
+  opacity: .7;
+}
+
+.modal {
+  margin: 20vh auto 15px;
+  padding: 16px 30px;
+  border: 3px solid #b6cce3;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  background-color: #fff;
+  position: relative;
+  max-width: 726px;
+  color: #444;
+
+  @media (max-width: $sm) {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 15px;
+  }
+
+  &__box-title {
+    text-align: center;
+    padding: 0 30px;
+    font-weight: bold;
+  }
+
+  &__title-line1 {
+    font-size: 18px;
+    color: $c-title-dark;
+    margin-bottom: 9px;
+
+    @media (max-width: $ssm) {
+      font-size: 16px;
+    }
+
+    span {
+      color: $c-lite-green;
+    }
+  }
+
+  &__title-line2 {
+    font-size: 17px;
+
+    &._mb_35 {
+      margin-bottom: 35px;
+    }
+
+    @media (max-width: $sm) {
+      margin-bottom: 5px;
+    }
+
+    @media (max-width: $ssm) {
+      font-size: 16px;
+    }
+  }
+
+  &__title-line3 {
+    font-size: 32px;
+    color: $c-lite-green;
+
+    @media (max-width: $sm) {
+      margin-bottom: 20px;
+      font-size: 25px;
+    }
+
+    @media (max-width: $ssm) {
+      font-size: 16px;
+    }
+
+    span {
+      color: $c-sky-blue;
+    }
+  }
+
+  &__box-img-form {
+    display: flex;
+
+    @media (max-width: $sm) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__img {
+    flex-shrink: 0;
+    margin-right: 30px;
+    position: relative;
+    top: -10px;
+
+    @media (max-width: $sm) {
+      margin: 0 0 10px;
+    }
+
+    @media (max-width: $ssm) {
+      max-width: 170px;
+    }
+  }
+
+  &__form {
+    line-height: 1.3;
+
+    @media (max-width: $sm) {
+      max-width: 260px;
+      width: 100%;
+    }
+
+    @media (max-width: $sm) {
+      max-width: 300px;
+    }
+  }
+
+  &__text {
+
+    &._top {
+      font-weight: 700;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    &._fsz_15 {
+      font-size: 15px;
+    }
+
+    &._before {
+      color: $c-main-lite;
+    }
+
+    &._bottom {
+      margin-bottom: 19px;
+    }
+  }
+
+  &__form-item {
+    margin-bottom: 6px;
+  }
+
+  &__input {
+    border-radius: 0 !important;
+    padding: 8px 7px 7px !important;
+    max-width: 280px;
+    width: 100%;
+  }
+
+  &__btn {
+    padding: 7px 23px 6px 23px;
+    margin-bottom: 12px;
+    font-size: 17px;
+  }
+
+  &__note {
+    font-size: 12px;
+  }
+
+  &__disc-code {
+    font-size: 24px;
+    margin-bottom: 18px;
+  }
+
+  &__close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 28px;
+    height: 28px;
+    border-top-right-radius: 3px;
+    border-bottom-left-radius: 8px;
+    background: #b6cce3 url(../images/sprite.png) -240px center no-repeat;
+  }
+}

@@ -1,0 +1,34 @@
+.list {
+
+  &__item {
+    font-size: 13px;
+    padding: 3px 0 3px 25px;
+    line-height: 16px;
+    margin-bottom: 0;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 20px;
+      height: 20px;
+      background: url(../images/sprite.png) -210px center no-repeat;
+    }
+
+    &._small {
+      font-size: 12px;
+      padding-bottom: 0;
+    }
+
+    &._v2 {
+      background: url(/design/images/icon_check.png) 0px 2px no-repeat;
+      padding-left: 20px;
+    }
+  }
+
+  &__item-big {
+
+  }
+}
